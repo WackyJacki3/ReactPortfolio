@@ -70,29 +70,29 @@ const TimelineSection = styled.div`
 `;
 
 const Experience = () => {
-    return (
-        <Container id='experience'>
-            <Wrapper>
-                <Title>Experience</Title>
-                <Desc>Here are some of my projects</Desc>
-                <TimelineSection>
-                    <Timeline>
-                        {experiences.map((experience, index) => (
-                            <TimelineItem>
-                                <TimelineSeparator>
-                                    <TimelineDot variant="outlined" color="secondary"/>
-                                    {index !== experiences.length - 1 && <TimelineConnector />}
-                                </TimelineSeparator>
-                                <TimelineContent sx={{ py: "12px", px: 2}}>
-                                    <ExperienceCard experience={experience} />
-                                </TimelineContent>
-                            </TimelineItem>
-                        ))}
-                    </Timeline>
-                </TimelineSection>
-            </Wrapper>
-        </Container>
-    )
+  return (
+      <Container id='experience'>
+          <Wrapper>
+              <Title>Experience</Title>
+              <Desc>Here are some of my projects</Desc>
+              <TimelineSection>
+                  <Timeline>
+                      {experiences.map((experience, index) => (
+                          <TimelineItem>
+                              <TimelineSeparator>
+                                  <TimelineDot variant="outlined" color="secondary"/>
+                                  {index !== experiences.length - 1 && <TimelineConnector />}
+                              </TimelineSeparator>
+                              <TimelineContent sx={{ py: "12px", px: 2}}>
+                                  <ExperienceCard experience={experience} />
+                              </TimelineContent>
+                          </TimelineItem>
+                      ))}
+                  </Timeline>
+              </TimelineSection>
+          </Wrapper>
+      </Container>
+  )
 }
 
 export default Experience

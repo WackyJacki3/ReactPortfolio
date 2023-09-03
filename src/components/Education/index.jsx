@@ -18,6 +18,7 @@ const Container = styled.div`
   z-index: 1;
   align-items: center;
   padding: 40px 0px 80px 0px;
+  margin-bottom: 20px;
 
   @media (max-width: 960px) {
     padding: 0px;
